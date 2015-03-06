@@ -15,10 +15,7 @@ class PortaDosDesesperados:
         self.escolhida = porta
 
     def isPortaValida(self, porta):
-        if porta in self.portas:
-            return True
-        else:
-            return False
+        return porta in self.portas
 
     def portaGanhou(self):
         return self.escolhida == self.carro
